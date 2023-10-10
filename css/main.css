@@ -29,6 +29,7 @@ body {
 
 .container {
   max-width: 100%;
+  background-color: black;
 }
 
 .container {
@@ -45,15 +46,15 @@ body {
   color: snow;
   padding: 0.75rem 2rem;
   border-radius: 9999999px;
-  margin: 0.5rem;
+  margin: 10%;
   background-color: #ED1F22;
   font-weight: bold;
   text-decoration: none;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
 }
 .button:hover {
-  text-decoration: underline;
-  background-color: #FFD1CF;
+  text-decoration: transparent;
+  background-color: snow;
   color: #620D0F;
 }
 
@@ -410,11 +411,14 @@ body {
 }
 .story {
 
+  background-color: black;
 
-
-
+  border-style: solid;
+  border-color: red;
   padding-bottom: 5rem;
-  padding-top: 0rem;
+  padding-top: 5rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 .video-container {
   position: absolute;
@@ -423,13 +427,14 @@ body {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: -1;
 }
 
 #player {
-  position: absolute;
+  position: inherit;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 45%;
   height: 100%;
 }
 @media (min-width: 62em) {
@@ -463,7 +468,7 @@ body {
 .parts__paragraph {
   margin: 0;
   font-size: 1rem;
-  color: #014153;
+  color: snow;
   padding-top: 2.5rem;
   padding-bottom: 1.5rem;
   line-height: 1.4em;
@@ -475,6 +480,7 @@ body {
 
 .parts {
   padding-bottom: 1.8rem;
+  background-color: black;
 }
 
 .parts::after {
@@ -482,7 +488,7 @@ body {
   display: block;
   height: 0.25rem;
   width: 7.5rem;
-  background-color: #ED6A4E;
+  background-color: red;
   margin-left: auto;
   margin-right: auto;
 }
@@ -502,18 +508,18 @@ body {
   display: block;
   flex: 1 0 20rem;
   padding: 1.5rem;
-  border: 0.125rem solid #ED6A4E;
+  border: 0.125rem solid red;
   text-decoration: none;
 }
 .parts__item:hover {
-  background-color: rgb(222, 222, 222);
+  background-color: #620D0F;
 }
 
 .parts__item-icon-container {
   width: 5rem;
   height: 5rem;
   border-radius: 99999px;
-  background-color: #ED6A4E;
+  background-color: red;
   margin-left: auto;
   margin-right: auto;
   padding-top: 1rem;
@@ -532,18 +538,14 @@ body {
   margin: 0;
   font-size: 1rem;
   padding-top: 1.5rem;
-  color: #014153;
+  color: snow;
   text-align: center;
 }
 
 .guide {
   padding-top: 10rem;
   padding-bottom: 3rem;
-
-  background-image:
-    linear-gradient(90deg, #014153, #014153),
-    url("../images/guide/pexels-kevin-menajang-982673.jpg"),
-    url("../images/guide/pexels-aron-visuals-1694621.jpg");
+  background-image: linear-gradient(20deg, red, black),url("../images/guide/pexels-kevin-menajang-982673.jpg"), url("../images/guide/pexels-aron-visuals-1694621.jpg");
   background-size:
     100% calc(100% - 10rem),
     100% calc(100% - 10rem),
@@ -576,7 +578,11 @@ body {
       0% 20%;
   }
 }
-
+.guide__container {
+  padding-top: 1rem;
+  padding-left: calc(50% - 7rem);
+  background-size: 50%;
+}
 
 @media (min-width: 62em) {
   .guide__container {
@@ -595,7 +601,7 @@ body {
 }
 
 .skills {
-  background-color: rgb(225, 220, 206);
+  background-color: snow;
   padding-bottom: 3rem;
 }
 
@@ -623,8 +629,8 @@ body {
 
 .skills__card-icon-container {
   display: inline-block;
-  background-color: #ED6A4E;
-  color: #014153;
+  background-color: #620D0F;
+  color: black;
   border-radius: 999999px;
   padding: 1rem;
   font-size: 4rem;
@@ -639,7 +645,7 @@ body {
 .skills__card-list {
   margin: 0;
   padding: 0;
-  color: #014153;
+  color: black;
   list-style-type: none;
 }
 
@@ -662,8 +668,8 @@ body {
 }
 
 .quote {
-  background-color: #014153;
-  color: #ED6A4E;
+  background-color: black;
+  color: red;
   padding-top: 4rem;
   padding-bottom: 4rem;
 }
@@ -705,18 +711,18 @@ body {
 .contact {
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #ED6A4E;
+  background-color: #620D0F;
 }
 .contact::selection,
 .contact ::selection {
-  color: #ED6A4E;
-  background-color: #014153;
+  color: red;
+  background-color: black;
 }
 @media (min-width: 62em) {
   .contact::after {
     content: "";
     display: block;
-    background-color: #014153;
+    background-color: black;
     width: 7.5rem;
     height: 0.25rem;
     margin-top: 3rem;
@@ -727,7 +733,7 @@ body {
 
 
 .contact__logo {
-  opacity: 0.5;
+  opacity: 1;
   display: block;
   width: 18rem;
   margin-left: auto;
@@ -750,7 +756,7 @@ body {
 
 .contact__phone {
   display: inline-block;
-  color: #014153;
+  color: red;
   text-align: center;
   padding: 0.5rem 1rem;
   font-size: 1.75rem;
@@ -765,7 +771,7 @@ body {
   display: block;
   width: 7.5rem;
   height: 0.25rem;
-  background-color: #014153;
+  background-color: black;
   margin: 3rem auto;
 }
 @media (min-width: 62em) {
@@ -785,8 +791,8 @@ body {
 
     background-image: linear-gradient(90deg,
     transparent calc(50% - 0.125rem),
-    rgba(255, 255, 255, 0.5) calc(50% - 0.125rem),
-    rgba(255, 255, 255, 0.5) calc(50% + 0.125rem),
+    rgba(255, 255, 255, 0.9) calc(50% - 0.125rem),
+    rgba(255, 255, 255, 0.9) calc(50% + 0.125rem),
     transparent calc(50% + 0.125rem));
   }
 }
@@ -828,23 +834,24 @@ img {
 }
 
 .footer {
-  background-color: #ED6A4E;
+  background-color: #620D0F;
   padding-bottom: 3rem;
 }
 .footer::selection,
 .footer ::selection {
-  color: #ED6A4E;
-  background-color: #014153;
+  color: black;
+  background-color: #620D0F;
 }
 
 .footer__text {
   margin: 0;
   text-align: center;
-  color: #014153;
+  color: snow;
 }
 
 .footer__link {
-  color: #014153;
+  color: snow
+;
   text-decoration: none;
 }
 
