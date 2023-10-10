@@ -16,7 +16,7 @@
 </head>
 <body>
 <header class="header">
-  <div class="container">
+  <div class="container_black">
     <nav class="header__nav">
       <a href="#" class="header__logo-link-desktop">
         <img src="images/icons/KundisLogoWhiteDva.svg" alt="Logo of KunDis" class="header__logo-desktop">
@@ -32,7 +32,12 @@
           <a href="martin.k.svanda@gmail.com" class="header__nav-link">martin.k.svanda@gmail.com</a>
         </li>
         <li class="header__nav-li header__nav-li--desktop-only">
-          <a href="#" class="button button--transparent">Sing up</a>
+          <div class="buttons">
+          <a href="#" >
+            <button class="btn-hover color-9">Sing up
+          </button>
+          </a>
+          </div>
         </li>
       </ul>
     </nav>
@@ -42,10 +47,19 @@
   <div class="background_header">
     <h1 class="header__heading">"Programming is the brain powered alchemy of creativity, where lines of logic and
       pixels of passion transmute into worlds of wonder."</h1>
-    <p class="header__sub-heading">My Wife ( Same like design of this web )</p>
+    <figcaption class="quote__figcaption">
+      <cite>
+    <p class="header__sub-heading">- My Wife ( Same like design of this web )</p>
+      </cite>
+    </figcaption>
     <div class="header__button-container">
-      <a href="#" class="button button--transparent">Find more</a>
-
+      <div class="buttons">
+      <a href="#" >
+        <button class="btn-hover color-9">
+          Find more
+      </button>
+      </a>
+      </div>
     </div>
   </div>
 </header>
@@ -71,7 +85,13 @@
         <h4 class="adventures__card-heading">What can I create : </h4>
         <p class="adventures__card-date"><span class="text-primary">Blueprints , C++ , Behavior Tree ,
           UI/UX , Environtment and others.....</span></p>
-        <a href="#" class="button">Unreal Engine 5.*</a>
+        <div class="buttons">
+        <a href="#" >
+          <button class="btn-hover color-9">
+            Unreal Engine 5.*
+          </button>
+       </a>
+        </div>
       </div>
       <div class="adventures__card">
         <div id="section2">
@@ -91,8 +111,13 @@
         <h4 class="adventures__card-heading">What can I build : </h4>
         <p class="adventures__card-date"><span class="text-primary">HTML , CSS , JScript , FrontEnd , BackEnd ,
           Fullstack and more just ask.....</span></p>
-
-        <a href="#" class="button">Websites etc.</a>
+        <div class="buttons">
+        <a href="#" >
+          <button class="btn-hover color-9">
+            Websites etc.
+          </button>
+        </a>
+        </div>
       </div>
       <div class="adventures__card">
         <div id="section3">
@@ -129,7 +154,13 @@
           createImageSlider('section2', 5500);  // Každých 7 sekund
           createImageSlider('section3', 4500);
         </script>
-        <a href="#" class="button">Book now</a>
+        <div class="buttons">
+        <a href="#" >
+          <button class="btn-hover color-9">
+            Book now
+          </button>
+        </a>
+        </div>
       </div>
     </div>
   </div>
@@ -160,7 +191,13 @@
         development needs. Let's turn your ideas into a digital masterpiece. Are you ready to redefine your digital
         presence?
       </p>
-      <a href="#" class="button">Book your adventure</a>
+      <div class="buttons">
+      <a href="#" >
+        <button class="btn-hover color-9">
+          Book your adventure
+        </button>
+      </a>
+      </div>
     </div>
   </div>
 </section>
@@ -411,12 +448,18 @@
         Donec quis enim tellus. Quisque enim tortor, vehicula quis vestibulum
         eu, ullamcorper sit amet ex.
       </p>
-      <a href="#" class="button">Find your guide</a>
+      <div class="buttons">
+      <a href="#" >
+        <button class="btn-hover color-9">
+          Find your guide
+      </button>
+      </a>
+      </div>
     </div>
   </div>
 </section>
 <section class="skills">
-  <div class="container">
+  <div class="container_black">
     <h2 class="heading heading--centered">
       <span class="heading__pre-text">Adventures</span> for every skill level
     </h2>
@@ -489,45 +532,62 @@
   <div class="container">
     <figure class="quote__figure">
       <blockquote class="quote__blockquote">
-        <p class="quote__paragraph">The world is a book, and those who do<br class="desktop-only">
-          not travel only read one page</p>
+        <p class="quote__paragraph">The life is like book, and those who do<br class="desktop-only">
+          not trying new thinks only read first page</p>
       </blockquote>
       <figcaption class="quote__figcaption">
-        <cite>- Saint Augustine</cite>
+        <cite>- Me</cite>
       </figcaption>
     </figure>
   </div>
 </section>
-<section class="contact">
+<div class="background">
   <div class="container">
-    <div class="contact__row">
-      <div class="contact__info">
-        <img class="contact__logo" src="images/icons/MyWebLogoWhite.svg" alt="KunDis
-">
-        <h4 class="contact__cta">Want to learn more?<br>Call us or drop us a message.</h4>
-        <div class="contact__phone-container">
-          <a href="#" class="button">+49 (0)175 90 96965</a>
+    <div class="screen">
+      <div class="screen-header">
+        <div class="screen-header-left">
+          <div class="screen-header-button close"></div>
+          <div class="screen-header-button maximize"></div>
+          <div class="screen-header-button minimize"></div>
+        </div>
+        <div class="screen-header-right">
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
+          <div class="screen-header-ellipsis"></div>
         </div>
       </div>
-      <div class="contact__form">
-        <form class="form" action="#" method="GET">
-          <div class="form__input-container">
-            <input class="form__input" type="text" name="name" placeholder="Please enter your name...">
+      <div class="screen-body">
+        <div class="screen-body-item left">
+          <div class="app-title">
+            <span>CONTACT</span>
+            <span>US</span>
           </div>
-          <div class="form__input-container">
-            <input class="form__input" type="email" name="email" placeholder="Please enter your email...">
+          <div class="app-contact">CONTACT INFO : +49 (0) 175 90 96965</div>
+        </div>
+        <div class="screen-body-item">
+          <div class="app-form">
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="NAME" value="Tony Stark">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="EMAIL">
+            </div>
+            <div class="app-form-group">
+              <input class="app-form-control" placeholder="CONTACT NO">
+            </div>
+            <div class="app-form-group message">
+              <input class="app-form-control" placeholder="MESSAGE">
+            </div>
+            <div class="app-form-group buttons">
+              <button class="app-form-button">CANCEL</button>
+              <button class="app-form-button">SEND</button>
+            </div>
           </div>
-          <div class="form__input-container">
-            <textarea class="form__input form__input--textarea" placeholder="Please enter your message..."></textarea>
-          </div>
-          <div class="contact__form-submit-container">
-            <input type="submit" value="Formular abschicken!" class="button button--primary">
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
-</section>
+</div>
 <footer class="footer">
   <div class="container">
     <p class="footer__text">
